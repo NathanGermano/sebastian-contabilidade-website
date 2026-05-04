@@ -1,0 +1,386 @@
+@use '../colors.scss' as c;
+
+.session_info{
+    .statistics_info{
+        padding-top: 1rem;
+    }
+
+    .titleStatistics{
+        font-size: 25px;
+        max-width: 25%;
+    }
+
+    .paragraphData{
+        font-size: 1.5rem;    
+    }
+
+    .icons-statistics{
+        margin-right: .75rem;
+        margin-bottom: .75rem;
+    }
+
+    .bossTalking{
+        width: 35rem;
+        border-radius: 3rem;
+    }
+
+    .data_steps{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .steps_wrapp{
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+        gap: .50rem;
+    }
+
+    .label{
+        border-left: 2px solid c.$plain-white;
+        padding: .50rem;
+    }
+
+    .numberSteps{
+        font-size: 16px;
+    }
+
+    .captionSteps{
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .paragraphSteps{
+        margin-top: .50rem;
+    }
+
+    .benefits_info{
+        flex-direction: column;
+    }    
+    
+    .data_benefits{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .benefits_wrapp{
+        height: 16rem;
+        width: 20rem;
+        gap: 1rem;
+    }
+
+    .icons-benefits{
+        font-size: 2rem;
+    }
+
+    .captionDangers{
+        font-weight: 600;
+    }
+
+    .texts_danger_info{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.1rem;
+        gap: 1.5rem;
+    }
+
+    picture img{
+        width: 50rem;
+    }
+
+    .data_dangers{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .dangers_wrapp{
+        height: 9rem;
+        width: 30rem;
+        gap: 1rem;
+    }
+
+    .icons-dangers{
+        font-size: 1.5rem;
+    }
+
+    .reviews_info{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .titleReviews{
+        margin-bottom: 1rem;
+    }
+}
+
+.session_final{
+    .employeeImage{
+        width: 35rem;
+        border-radius: 3rem;
+    }
+
+    .texts_suport_final{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        gap: 1.5rem;
+    }
+
+    .titleSuport{
+        font-size: 3rem;
+        font-weight: 400;
+        color: c.$pastel-blue;
+    }
+    
+    .items_suport{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .items_wrapp{
+        width: 20rem;
+    }
+
+    .solutions_final{
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+    
+    .titleSolutions{
+        font-size: 3rem;
+        font-weight: 400;
+        color: c.$pastel-blue;
+    }
+
+    .data_solutions{
+        margin: 3rem 0 3rem 0;
+        display: grid;
+        gap: 4.5rem;
+        padding: 2rem;
+        color: c.$plain-white;
+        
+        grid-template-areas: 
+        "solution-1 solution-1 solution-2 solution-3"
+        "solution-4 solution-5 solution-6 solution-7"
+        "solution-8 solution-9 solution-10 solution-10";
+
+        .solution-1{ grid-area: solution-1;}
+        .solution-2{ grid-area: solution-2;}
+        .solution-3{ grid-area: solution-3;}
+        .solution-4{ grid-area: solution-4;}
+        .solution-5{ grid-area: solution-5;}
+        .solution-6{ grid-area: solution-6;}
+        .solution-7{ grid-area: solution-7;}
+        .solution-8{ grid-area: solution-8;}
+        .solution-9{ grid-area: solution-9;}
+        .solution-10{ grid-area: solution-10;}
+    }
+    
+    .solutions_wrapp{
+        font-size: 1.1rem;
+        font-weight: 600;
+        background-color: c.$alt-dark-blue;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+}
+
+.session_extra{
+    .collaborators_extra{
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+        background-color: c.$alt-pastel-blue;
+        overflow-x: hidden;
+    }
+
+    .data_collaborators{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        animation: spin 25s infinite linear;
+    }
+    .collaborators_wrapp{
+        padding: 1rem;
+        align-content: center;
+        flex: 0 0 5em;
+    }
+
+    .logoCollaborators{
+        width: 10rem;
+    }
+}
+
+@keyframes spin {
+    from {transform: translateX(0)}
+    to {translate: -100%;}
+}
+
+
+@media (max-width: 1400px) {
+    .session_info{
+        .data_benefits{
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .dangers_info{
+            flex-direction: column;
+        }
+
+        picture img{
+            width: 55rem;
+        }
+
+        .dangers_wrapp{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .session_final{
+        .suport_final{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .items_suport{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .data_solutions{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            gap: 3rem;
+        }
+
+        .solutions_wrapp{
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 1130px) {
+    .session_info{
+        .steps_info{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .session_info{
+        .statistics_info{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .titleStatistics{
+            font-size: 25px;
+            max-width: 100%;
+        }
+
+        .statistics_wrapp{
+            width: 100%;
+        }
+
+        picture img {
+            width: 35rem;
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .session_info{
+        picture img {
+            width: 25rem;
+        }
+
+        .bossTalking{
+            width: 22rem;
+        }
+
+        .titleSteps{
+            width: 100%;
+        }
+
+        .data_steps{
+            align-items: center;
+            justify-content: center;
+        }
+
+        .steps_wrapp{
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .label{
+            width: 100%;
+        }
+
+        .titlesInfo{
+            text-align: center;
+        }
+
+
+        .texts_reviews_info{
+            width: 30%;
+        }
+
+        .statistics_info, .steps_info, .benefits_info, .dangers_info, .reviews_info{
+            padding: 1rem 0 4rem 0;
+        }
+    }
+    .session_final{        
+        .employeeImage{
+            width: 22rem;
+        }
+
+        .texts_suport_final{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttonSuport{
+            width: 80%;
+        }
+
+        .data_solutions{
+            margin: 1rem 0 1rem 0;
+        }
+
+        .titleSuport, .titleSolutions{
+            font-size: 30px;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        .suport_final, .solutions_final{
+            padding: 1rem 0 4rem 0;
+        }
+    }
+}
+
+@media (max-width: 408px) {
+    .session_info{
+        picture img {
+            width: 20rem;
+        }
+    }
+}

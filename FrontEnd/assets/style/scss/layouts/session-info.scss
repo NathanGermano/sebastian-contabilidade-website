@@ -1,0 +1,10 @@
+@use '../colors.scss' as c;
+
+.session_info{
+    background-image: linear-gradient(to right top, #1f2933, #2c3a48, #3a4c5f, #485f76);    
+    color: c.$plain-white;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    padding: 4rem;
+}
+

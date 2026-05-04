@@ -1,0 +1,40 @@
+@use './colors.scss' as c;
+
+.swiper {
+    width: 70rem;
+    height: 25rem;
+
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        color: c.$dark-blue;
+        background-image: linear-gradient(to right top, #f3f4f9, #ffffff);
+        border-radius: 2rem;
+        font-weight: 500;
+    }
+
+    .review_wrapp{
+        width: 20rem;
+        height: 9rem;
+    }
+
+    .author_wrapp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .50rem;
+    }
+
+    .authorImage{
+        width: 3.5rem;
+        border-radius: 100%;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: c.$dark-blue;
+    }
+}

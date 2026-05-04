@@ -1,0 +1,69 @@
+.session_start{
+    .bossCell{
+        margin-top: 1rem;
+    }
+}
+
+.session_info{
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form_wrapp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputForm{
+        border: none;
+        height: 3.8rem;
+        width: 28rem;
+        border-radius: .70rem;
+        margin-top: 10px;
+    }
+
+    .attendantsImage{
+        width: 35rem;
+        border-radius: .70rem;
+    }
+
+    .texts_contact_info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .paragraphContact{
+        max-width: 80%
+    }
+
+    textarea{
+        resize: none;
+        margin-top: 10px;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 1072px) {
+    .session_info{
+        .contact_info{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .session_info{
+        .inputForm{
+            width: 20rem;
+        }
+        .attendantsImage{
+            width: 100%;
+        }
+    }
+}

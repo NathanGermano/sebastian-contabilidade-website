@@ -1,0 +1,11 @@
+{
+  "name": "sebastian-contabilidade",
+  "version": "1.0.0",
+  "description": "website for an accounting firm",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/style/scss/style.scss:assets/style/css/style.css"
+  },
+  "author": "NathanGermano",
+  "license": "ISC"
+}
